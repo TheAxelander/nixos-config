@@ -39,7 +39,6 @@
           modules = [ 
             ./configuration.nix
             ./modules/gui-packages.nix
-            ./modules/vscode.nix
             ./modules/dotnet/dotnet.nix
             #./modules/python.nix
           ];
@@ -55,6 +54,7 @@
           inherit pkgs;
           modules = [ 
             ./home.nix 
+            ./modules/vscode/home.nix
             ./modules/dotnet/home.nix
           ];
           extraSpecialArgs = {
